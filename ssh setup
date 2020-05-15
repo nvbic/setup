@@ -1,0 +1,22 @@
+INSTRUCTIONS
+1. Launch the terminal application on your local computer and create your config file in your home directory:
+
+TIP:
+
+On OS X, this is located at /Applications/Utilities/Terminal.app. Consider dragging this application into your Dock for convenience.
+
+touch /Users/username/.ssh/config
+NOTE:
+
+Your .ssh directory is automatically created when you use the ssh command for the first time. If you have never used ssh before under this user account please create the directory first using:
+
+mkdir /Users/username/.ssh && chmod 700 /Users/username/.ssh
+2. Edit the file using vi or any Unix text editor you are comfortable with. We will use vi:
+
+vi /Users/username/.ssh/config
+3. There are many options for your config file. Below is an example entry for a shortcut to your DV server:
+
+Host dv
+
+HostName example.com
+User domainuser
